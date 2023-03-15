@@ -18,5 +18,8 @@ public class OrderDAO {
 	public List<OrderSummary> getAll(){
 		return repo.findAll();
 	}
+	public void deleteAll() {
+		repo.deleteAll();
+	}
 
 }
