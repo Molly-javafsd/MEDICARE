@@ -103,7 +103,7 @@ public class MainController {
 		int balance=bdao.getBalance(bid);
 		
 		if(balance>price) {
-			
+			odao.deleteAll();
 			mv.setViewName("paysuccess.jsp");
 		}
 		else {
